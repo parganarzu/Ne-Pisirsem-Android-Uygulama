@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_yemek__bilgi"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:orientation="vertical"
+    tools:context="com.example.arzu.finalproject.Yemek_Bilgi"
+    android:weightSum="1"
+    android:background="@drawable/yemek">
+
+    <TextView
+        android:text="Yemek Adı"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@android:color/black"
+        android:id="@+id/txt_yemekadi"
+        android:textSize="24sp"
+        tools:ignore="HardcodedText"
+        android:gravity="center" />
+
+    <ImageView
+        android:layout_width="261dp"
+        android:layout_height="175dp"
+        app:srcCompat="@android:drawable/ic_menu_gallery"
+        android:id="@+id/img_yemek"
+        android:layout_gravity="center"
+        tools:ignore="ContentDescription,InefficientWeight"
+        android:layout_marginTop="15dp"
+        android:layout_weight="0.37" />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="59dp"
+        android:weightSum="1"
+        android:layout_marginTop="25dp">
+
+        <Button
+            android:text="Yapılışı"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/btn_yapilis"
+            android:background="@drawable/shape_btn"
+            android:layout_weight="0.50"
+            tools:ignore="ButtonStyle,HardcodedText" />
+        <Button
+            android:text="Malzemeler"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/btn_malzeme"
+            android:background="@drawable/shape_btn"
+
+            android:layout_weight="0.50"
+            tools:ignore="ButtonStyle,HardcodedText" />
+    </LinearLayout>
+
+    <ImageButton
+        android:layout_width="109dp"
+        android:layout_height="87dp"
+        app:srcCompat="@drawable/kalp"
+        android:id="@+id/imgbtn_like"
+        android:background="@android:color/transparent"
+        tools:ignore="ContentDescription"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:layout_weight="0.03" />
+
+</LinearLayout>
